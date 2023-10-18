@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = ({ navigation }) => {
   // console.log(props.navigation);
   // const { navigate } = navigation;
   return (
@@ -17,7 +17,19 @@ const HomeScreen = ({navigation}) => {
       />
       <Button
         onPress={() => navigation.navigate('ImageScreen')}
-        title='Go to ImageScreen'
+        title='Go to ImageScreen Demo'
+      />
+      <Button
+        onPress={() => navigation.navigate('CounterScreen')}
+        title='Go to Counter Demo'
+      />
+      <Button
+        onPress={() => navigation.navigate('ColorScreen')}
+        title='Go to Color Demo'
+      />
+      <Button
+        onPress={() => navigation.navigate('SquareScreen')}
+        title='Go to Square Colors Demo'
       />
 
       {/* <TouchableOpacity onPress={() => props.navigation.navigate('ListScreen')}>
